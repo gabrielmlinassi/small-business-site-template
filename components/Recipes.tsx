@@ -13,7 +13,7 @@ export default function Recipes({ recipes }: RecipesProps) {
         <div key={`${recipe.slug}-${idx}`} className="text-[#3A3A3A]">
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-8">
             <Link href={`/recipes/${recipe.slug}`} passHref>
-              <div className="relative aspect-[3/2] cursor-pointer">
+              <div className="relative aspect-[3/2] cursor-pointer ring-[#3a3a3a] ring-offset-4 duration-300 hover:ring">
                 <Image
                   src={recipe.thumbnail}
                   priority={idx <= 2}

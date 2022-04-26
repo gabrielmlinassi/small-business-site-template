@@ -53,7 +53,7 @@ function Footer() {
               referrerPolicy="no-referrer-when-downgrade"
             ></iframe>
             <div className="mt-8 flex flex-col items-start gap-4 lg:flex-row lg:gap-36">
-              <div className="grid grid-cols-2 gap-8 font-Belleza md:grid-cols-1 md:gap-4">
+              <div className="grid grid-cols-2 gap-16 font-Belleza md:grid-cols-1 md:gap-4">
                 <div className="flex items-center space-x-4">
                   <PhoneIcon className="text-white text-opacity-30" />
                   <span>(717) 620-8171</span>
@@ -63,7 +63,7 @@ function Footer() {
                   <span>info@email.com</span>
                 </div>
               </div>
-              <div className="grid grid-cols-2 gap-8 font-Belleza">
+              <div className="grid grid-cols-2 gap-16 font-Belleza">
                 <div className="space-y-4">
                   <div className="flex space-x-3">
                     <div className="w-9 text-white text-opacity-30">SUN</div>
