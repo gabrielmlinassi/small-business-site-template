@@ -21,8 +21,8 @@ const Pricing = ({ price, discountedPrice }: PricingProps) => {
 const ProductCard = ({ item }: { item: Catalog }) => {
   return (
     <Link key={item.slug} href={`/shop/${item.slug}`} passHref>
-      <li className="flex-shrink-0 md:w-[300px]">
-        <div className="relative h-[325px]">
+      <li className="flex aspect-square w-full flex-grow flex-col bg-green-400 p-1 sm:w-auto">
+        <div className="relative h-full w-full bg-red-400">
           <Image
             src={item.images[0]}
             alt="catalog product"
@@ -30,9 +30,14 @@ const ProductCard = ({ item }: { item: Catalog }) => {
             objectFit="cover"
           />
         </div>
-        <div className="mt-4 font-Belleza text-2xl">{item.name}</div>
-        <div className="mt-1 font-Poppins text-lg text-[#3A3A3A]">
-          <Pricing price={item.price} discountedPrice={item.discounted_price} />
+        <div>
+          <div className="font-Belleza text-2xl">{item.name}</div>
+          <div className="font-Poppins text-lg text-[#3A3A3A]">
+            <Pricing
+              price={item.price}
+              discountedPrice={item.discounted_price}
+            />
+          </div>
         </div>
       </li>
     </Link>

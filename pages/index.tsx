@@ -13,7 +13,7 @@ const Home: Page = ({ catalog, socialMedia }) => {
     <Layout>
       {/* hero section */}
       <section className="overflow-hidden bg-[#4D5D43]">
-        <div className="mx-auto flex max-w-[1376px] flex-col md:flex-row">
+        <div className="mx-auto flex max-w-[1376px] flex-col items-center md:flex-row">
           <div className="flex-shrink-0 px-6 py-10 md:w-[425px]">
             <h3 className="font-Belleza text-2xl text-white">
               A specialty food store, built to share our passion for cooking and
@@ -55,23 +55,23 @@ const Home: Page = ({ catalog, socialMedia }) => {
         </div>
       </section>
       {/* catalog section */}
-      <section className="my-container mt-14 flex flex-col gap-10 md:flex-row md:gap-0">
-        <div className="max-w-[425px]">
+      <section className="mx-auto mt-14 flex max-w-[1376px] flex-col items-start gap-6 px-6 lg:flex-row lg:items-center lg:gap-0 lg:px-0">
+        <div className="max-w-[425px] bg-red-50 lg:px-6">
           <FancyHeading>
             <FancyHeading.Title>Our Catalog</FancyHeading.Title>
             <FancyHeading.BackTitle>Our Catalog</FancyHeading.BackTitle>
           </FancyHeading>
           <p className="mt-3">
-            There are many variations of passages of Lorem Ipsum available, but
-            the majority have suffered alteration in some form, by injected
-            humour.
+            There are many variations of passages a a a a a a of Lorem Ipsum
+            available, but the majority have suffered alteration in some form,
+            by injected humour.
           </p>
           <LinkButton href="/" className="mt-4 text-[#4D5D43]">
             View shop
           </LinkButton>
         </div>
-        <div className="md:overflow-auto">
-          <ul className="flex flex-col gap-8 md:flex-row md:gap-6">
+        <div className="w-full lg:pr-6">
+          <ul className="flex flex-col flex-wrap gap-4 bg-red-300 sm:flex-row">
             {catalog.map((item) => (
               <ProductCard key={item.slug} item={item} />
             ))}
