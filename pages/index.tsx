@@ -56,10 +56,12 @@ const Home: Page = ({ catalog, socialMedia }) => {
       </section>
       {/* catalog section */}
       <section className="mx-auto mt-14 flex max-w-[1376px] flex-col items-start gap-6 px-6 lg:flex-row lg:items-center lg:gap-0 lg:px-0">
-        <div className="max-w-[425px] bg-red-50 lg:px-6">
+        <div className="max-w-[425px] lg:px-6">
           <FancyHeading>
             <FancyHeading.Title>Our Catalog</FancyHeading.Title>
-            <FancyHeading.BackTitle>Our Catalog</FancyHeading.BackTitle>
+            <FancyHeading.BackTitle className="sm:text-[80px]">
+              Our Catalog
+            </FancyHeading.BackTitle>
           </FancyHeading>
           <p className="mt-3">
             There are many variations of passages a a a a a a of Lorem Ipsum
@@ -71,7 +73,7 @@ const Home: Page = ({ catalog, socialMedia }) => {
           </LinkButton>
         </div>
         <div className="w-full lg:pr-6">
-          <ul className="flex flex-col flex-wrap gap-4 bg-red-300 sm:flex-row">
+          <ul className="flex flex-col flex-wrap gap-4 sm:flex-row">
             {catalog.map((item) => (
               <ProductCard key={item.slug} item={item} />
             ))}

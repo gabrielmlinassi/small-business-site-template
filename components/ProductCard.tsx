@@ -21,8 +21,8 @@ const Pricing = ({ price, discountedPrice }: PricingProps) => {
 const ProductCard = ({ item }: { item: Catalog }) => {
   return (
     <Link key={item.slug} href={`/shop/${item.slug}`} passHref>
-      <li className="flex aspect-square w-full flex-grow flex-col bg-green-400 p-1 sm:w-auto">
-        <div className="relative h-full w-full bg-red-400">
+      <li className="flex aspect-square w-full flex-grow flex-col p-1 sm:w-auto">
+        <div className="relative h-full w-full">
           <Image
             src={item.images[0]}
             alt="catalog product"
