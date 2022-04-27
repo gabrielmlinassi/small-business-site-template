@@ -25,7 +25,7 @@ const RecipesPage: Page = ({ initialRecipes }) => {
     <Layout>
       <section className="my-container mt-10">
         <div className="flex flex-col md:flex-row md:gap-6">
-          <div className="min-w-[200px]">
+          <div className="min-w-[200px] lg:min-w-[325px]">
             <FancyHeading>
               <FancyHeading.Title>Recipes</FancyHeading.Title>
               <FancyHeading.BackTitle>Recipes</FancyHeading.BackTitle>
